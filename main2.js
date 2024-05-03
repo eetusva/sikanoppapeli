@@ -1,8 +1,8 @@
 document.getElementById('addplayer').addEventListener('submit', addPlayer);
 document.getElementById('start').addEventListener('submit', startGame);
 
-const players = []              // pelaajaluettelo
-const scores = [];              // pisteluettelo
+const players = []             
+const scores = [];             
 const dice = [0, 0];
 let targetScore = 0;            
 let streak = 0;
@@ -10,7 +10,6 @@ let turn = 1;
 let gameVictory = false;
 let tuplat = 0;
 
-// pelaajan lisääminen
 function addPlayer(event) {
     event.preventDefault()
     let x = 1;
@@ -27,7 +26,6 @@ function addPlayer(event) {
     }
 }
 
-// pelin aloitus jos ehdot täyttyvät (pisteraja ja pelaajien määrä)
 function startGame(event) {
     event.preventDefault()
     if (document.getElementById("score").value < 100) {
@@ -49,7 +47,6 @@ function startGame(event) {
     }
 }
 
-// vuoron lopetus
 function endTurn(i) {
 
     if (i != 2) {
@@ -98,8 +95,6 @@ function roll() {
         i++;
     }
 
-    // kahden nopan pelin ehdot 
-    //(jos yksi ykkönen, jos kaksi ykköstä, jos tuplat ja jos tuplat kolmesti peräkkäin)
     if (dice[0] == 1 && dice[1] != 1) {
         document.getElementById("gameAlert").innerHTML = players[turn - 1] + " heitti ykkösen, vuoro vaihtuu seuraavalle";
         endTurn(2);
