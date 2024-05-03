@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;  }
+  
+.header {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;   
+  }
+
+a:link {
+  color: #754444;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #754444;
+}
+
+a:hover {
+  color:black;
+  background-color: #fcd0d0;
+}
+
+
+#dicepic {
+  text-align: center;
+}
+
+#vuoro {
+  font-weight: normal;
+  color: white;
+}
+img {
+  border-radius: 8px;
+  width: 100px;
+}
+  div p {
+    font-size: 11px;
+  }
+  
+  .column2.middle {
+    padding: 10px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    height: 400px; 
+  }
+
+  .column2.side {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 400px; 
+  }
+  .column.middle {
+    padding: 10px;
+    float: left;
+    text-align: center;
+    width: 50%;
+    height: auto; 
+  }
+
+  .column.side {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: auto; 
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div.nappula > button {
+    padding: 15px 10px;
+    color: black;
+    border: 1px solid #911c1c;
+    background-color: #fcd0d0;
+    width: 200px
+    font-family: 'Poppins';
+    font-size: large ;
+    }
+
+    div.nappula > button:hover {
+      padding: 15px 10px;
+      color: black;
+      border: 1px solid #911c1c;
+      background-color: #f59090;
+      width: 200px
+      font-family: 'Poppins';
+      font-size: large;
+      }
+
+    li {
+      width: 100%;
+      background-color: white;
+      border: dotted 1px #911c1c;
+      font-family: Poppins;
+      list-style: none;
+  }
+  
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .column2 {
+      width: 100%;
+    }
+  }
+  
